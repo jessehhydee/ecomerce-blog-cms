@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+
+
+
+  <head>
+
+
+
+
+    <title>Login</title>
+
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="cmsLoginStyleSheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+
+
+  </head>
+
+
+
+  <body>
+
+
+    <a id="back" href="../../index/dum/index.php">< <u>Back to website</u></a>
+
+
+
+    <div class="container">
+
+      <form action="confirmLogin.php" method="post" enctype="multipart/form-data">
+
+
+
+          <div class="row">
+
+            <div class="col-lg-2">
+
+            </div>
+
+            <div id="formWrapper" class="col-lg-8">
+
+              <div class="row">
+
+                <img id="logo" src="../../img/chelseaJayLogoNoCircle.png" alt="Logo">
+
+              </div>
+
+              <div  id="desc" class="row">
+
+                <h3>Login</h3>
+
+              </div>
+
+
+
+              <div id="failMsg" class="row">
+
+                <p>Wrong username or password, please retry again</p>
+
+              </div>
+
+
+
+              <div class="row">
+
+                <input type="text" name="username" id="username" placeholder="Username">
+
+              </div>
+
+              <div class="row">
+
+                <input type="password" name="password" id="password" placeholder="Password">
+
+              </div>
+
+              <div class="row">
+
+                <input type="submit" value="Login" name="submit">
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-2">
+
+            </div>
+
+          </div>
+
+
+
+      </form>
+
+    </div>
+
+
+    <script type="text/javascript">
+
+      function retryOrNot() {
+
+        var params = new URLSearchParams(document.location.search.substring(1));
+        var failed = params.get("failed");
+
+        var toggledid = document.getElementById("failMsg");
+
+        if (failed == 1) {
+          toggledid.style.display = "block";
+        }
+        else {
+          toggledid.style.display = "none";
+        }
+
+      }
+
+      window.onload = retryOrNot();
+
+    </script>
+
+  </body>
+
+
+</html>

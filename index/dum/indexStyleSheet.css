@@ -1,0 +1,559 @@
+
+body {
+   margin: 0;
+   padding: 0;
+   animation: fadeInAnimation ease 2s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+0% {
+   opacity: 0;
+}
+100% {
+   opacity: 1;
+}
+}
+
+
+
+
+
+#headerContainer {
+  width: 100vw;
+  height: 500px;
+  background: #f6ede3;
+}
+
+#headerContainer img {
+  width: 400px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 45px;
+}
+
+.menuWrapper {
+  width: 60vw;
+  height: 40px;
+  margin-top: 200px;
+  float: right;
+  font-size: 1.4em;
+  visibility: hidden;
+}
+
+.menuWrapper ul {
+  display: inline-block;
+  line-height: 40px;
+}
+
+.menuWrapper li {
+  list-style: none;
+}
+
+.menuWrapper a {
+  text-decoration: none;
+  color: #ddb4bb;
+}
+
+.menuWrapper a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: white;
+}
+
+.highlightLI {
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: white;
+}
+
+#horizontalStick {
+  width: 60vw;
+  height: 50px;
+  background: white;
+  margin-top: -200px;
+  float: right;
+  visibility: hidden;
+}
+
+.verticalStick {
+  width: 50px;
+  height: 500px;
+  background: white;
+  margin: -80px auto auto auto;
+  visibility: hidden;
+}
+
+#shortyStick {
+  width: 50px;
+  height: 300px;
+  background: white;
+  margin: -450px 35vw auto auto;
+  float: right;
+}
+
+
+
+
+
+#infoContainer {
+  width: 100vw;
+  height: 500px;
+  background: #ddb4bb;
+  z-index: -1;
+  position: relative;
+}
+
+#breifWrapper {
+  width: 40vw;
+  height: 300px;
+  margin: 150px auto auto 30px;
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+
+#infoContainer img {
+  width: 250px;
+  height: auto;
+  margin: -240px 6vw auto auto;
+  float: right;
+}
+
+
+
+
+.containerH1 {
+  font-size: 5em;
+  margin-top: 140px;
+}
+
+
+
+
+
+#iphoneContainer {
+  height: 400px;
+  text-align: center;
+  background-image: url('../../img/iphoneCaseBackground.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#iphoneContainer .containerH1, #iphoneContainer a {
+  float: right;
+}
+
+#iphoneContainer a {
+  text-decoration: underline;
+  color: #ddb4bb;
+}
+
+
+#iphoneContainer img {
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+#studioPouchContainer {
+  background-color: #f6ede3;
+  height: 400px;
+  text-align: center;
+}
+
+#studioPouchContainer a {
+  float: left;
+  margin-top: -20px;
+  text-decoration: underline;
+  color: #ddb4bb;
+}
+
+.pouchImage{
+  width: 350px;
+  height: auto;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+#notebookContainer {
+  background-image: url('../../img/notebookBackground.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+#notebookContainer h1 {
+  font-size: 5em;
+  margin-top: 30px;
+}
+
+#notebookLink {
+  margin-top: 10px;
+  float: right;
+}
+
+#notebookLink a {
+  text-decoration: underline;
+  color: white;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+  .containerH1 {
+    font-size: 4em;
+  }
+
+  #notebookContainer h1 {
+    font-size: 4em;
+  }
+
+  #notebookLink {
+    margin-right: 5px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 1130px) {
+
+  #headerContainer img {
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+
+  #horizontalStick {
+    margin-top: -155px;
+  }
+
+  .verticalStick {
+    margin: -35px auto auto auto;
+  }
+
+  #shortyStick {
+    margin: -450px 35vw auto auto;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+  #headerContainer {
+    text-align: center;
+  }
+
+  .menuWrapper {
+    width: 100vw;
+    height: 40px;
+    margin: 50px auto auto auto;
+  }
+
+  .slideUp, .slideLeft, .verticalStick, #shortyStick, #horizontalStick {
+    display: none;
+  }
+
+  #infoContainer img {
+    margin: 135px 6vw auto auto;
+  }
+
+  #breifWrapper {
+    width: 50vw;
+    margin: 130px auto auto 30px;
+  }
+
+}
+
+
+@media screen and (max-width: 995px) {
+
+  .containerH1 {
+    font-size: 3em;
+    margin-top: 160px;
+  }
+
+  #notebookContainer h1 {
+    margin-top: 50px;
+    font-size: 3em;
+  }
+
+  #notebookLink {
+    margin-right: 0px;
+  }
+
+}
+
+
+@media screen and (max-width: 835px) {
+
+  #infoContainer {
+    overflow: hidden;
+  }
+
+  #infoContainer img {
+    width: 200px;
+    float: none;
+    display: block;
+    margin: -90px auto auto auto;
+  }
+
+  #breifWrapper {
+    width: 80vw;
+    position: relative;
+    display: block;
+    margin: 50px auto auto auto;
+  }
+
+}
+
+
+@media screen and (max-width: 770px) {
+
+  #iphoneContainer img {
+    width: 100px;
+    margin-top: 30px;
+  }
+
+  #iphoneContainer .containerH1 {
+    margin-top: 20px;
+  }
+
+  #iphoneContainer .containerH1, #iphoneContainer a {
+    float: none;
+
+  }
+
+  .pouchImage{
+    width: 175px;
+    margin-top: 50px;
+  }
+
+  #studioPouchContainer .containerH1 {
+    margin-top: 20px;
+  }
+
+  #studioPouchContainer a {
+    float: none;
+    margin-top: -20px;
+  }
+
+  #notebookLink {
+    float: none;
+    display: block;
+    margin: 30px auto 0 auto;
+  }
+
+  #notebookContainer h1 {
+    margin: 30px auto 0 auto;
+  }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+  .menuWrapper li {
+    font-size: 15px;
+  }
+
+  #breifWrapper {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  #infoContainer {
+    height: 570px;
+  }
+
+  #infoContainer img {
+    margin: -20px auto auto auto;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+==============================================
+fadeIn
+==============================================
+*/
+
+.fadeIn{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
+
+	animation-duration: 2.5s;
+	-webkit-animation-duration: 2.5s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0.0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0.0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+
+
+
+/*
+==============================================
+slideLeft
+==============================================
+*/
+
+
+.slideLeft{
+	animation-name: slideLeft;
+	-webkit-animation-name: slideLeft;
+
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes slideLeft {
+	0% {
+		width: 0vw;
+	}
+
+	100% {
+		width: 60vw;
+	}
+}
+
+@-webkit-keyframes slideLeft {
+	0% {
+		-webkit-transform: translateX(150%);
+	}
+
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+
+
+
+
+
+
+/*
+==============================================
+slideUp
+==============================================
+*/
+
+
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;
+
+	/*animation-delay: 1s;
+	-webkit-animation-delay: 1s;*/
+
+	animation-duration: 2.5s;
+	-webkit-animation-duration: 2.5s;
+
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible;
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	50%{
+		transform: translateY(-8%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@-webkit-keyframes slideUp {
+	0% {
+		-webkit-transform: translateY(100%);
+	}
+	50%{
+		-webkit-transform: translateY(-8%);
+	}
+	100% {
+		-webkit-transform: translateY(0%);
+	}
+}

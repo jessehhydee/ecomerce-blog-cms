@@ -1,0 +1,119 @@
+
+
+
+
+body, html {
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   animation: fadeInAnimation ease 2s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+
+
+
+#headerImgContainer {
+  background-image: url('../../img/aboutBanner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  color: white;
+}
+
+
+
+
+
+
+#aboutContainer {
+  width: 100vw;
+  height: auto;
+  background: #f6ede3;
+  padding: 50px 30px 50px 30px;
+  color: black;
+}
+
+.bottomBorderLine {
+  width: 400px;
+  border-bottom: 2px solid #ddb4bb;
+  margin: 10px auto 0 auto;
+}
+
+#aboutH2 {
+  margin: 0 auto;
+}
+
+#aboutH4 {
+  margin: 20px auto 0 auto;
+}
+
+#aboutContentWrapper {
+  margin-top: 80px;
+}
+
+
+
+
+
+
+
+#ContactContainer {
+  width: 100vw;
+  height: 400px;
+  background: #ddb4bb;
+  padding: 90px 30px 0px 30px;
+  color: white;
+  text-align: center;
+}
+
+#contactH1 {
+  font-size: 5em;
+  margin: 0 auto;
+}
+
+#contactLink {
+  margin: 50px auto 0 auto;
+  font-size: 1.3em;
+  color: white;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+  #aboutText {
+    margin-top: 40px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+  #ContactContainer {
+    height: 460px;
+  }
+
+}

@@ -1,0 +1,104 @@
+
+
+body, html {
+  background-color: #f6ede3!important;
+  margin: 0px;
+  padding: 0px;
+}
+
+form {
+  background: #f6ede3;
+  margin: 100px auto 50px auto;
+}
+
+#back {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+#back:hover {
+  color: #ae7880;
+}
+
+
+#logo {
+  height: 100px;
+  width: auto;
+  margin: 0 auto;
+}
+
+#desc {
+  padding-top: 30px;
+}
+
+h3 {
+  margin: 0 auto;
+}
+
+#failMsg {
+  padding-top: 15px;
+  text-align: center;
+}
+
+p {
+  margin: 0 auto;
+  color: red;
+}
+
+#formWrapper {
+  background: #fffaf6;
+  padding: 40px 30px;
+}
+
+
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 30px 0px 8px 0px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  border: 3px solid #555;
+}
+
+
+input[type=submit] {
+  background-color: #ae7880;
+  color: white;
+  padding: 10px 30px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #cfad71;
+}
+
+
+
+
+
+
+@media screen and (max-width: 575px) {
+
+  body, html {
+    background-color: #fffaf6!important;
+  }
+
+  form {
+    background: #fffaf6;
+  }
+
+}

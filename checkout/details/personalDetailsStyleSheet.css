@@ -1,0 +1,136 @@
+
+
+
+body, html {
+   margin: 0px;
+   padding: 0px;
+}
+
+
+
+
+
+
+
+/*----------------------------- FORM -----------------------*/
+
+
+
+
+#formSectionBackground {
+  background-color: #f6ede3!important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.formContainer {
+  border: 3px solid #ae7880;
+  border-radius: 6px;
+  background: #fffaf6;
+
+}
+
+.formSection {
+  background: #fffaf6;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 9px;
+}
+
+.formSection .borderLine {
+  border-bottom: 1px solid black;
+}
+
+
+input[type=text], input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus, input[type=date]:focus {
+  border: 3px solid #555;
+}
+
+input[type=submit] {
+  background-color: #ae7880;
+  color: white;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #cfad71;
+}
+
+h5, h2 {
+  text-align: center;
+}
+
+#paymentSection {
+  text-align: center;
+}
+
+#total {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+
+
+/*----------------------------- FORM END -----------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 765px) {
+
+
+  #formSectionBackground {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .ml-auto, .mx-auto {
+    margin-left: 0px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+  #back {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  #logo {
+    float: right;
+    margin-right: 20px;
+  }
+
+}

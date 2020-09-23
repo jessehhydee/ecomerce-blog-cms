@@ -1,0 +1,177 @@
+
+
+body, html {
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+   animation: fadeInAnimation ease 2s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+
+
+
+
+#productContainer {
+  background: #f6ede3;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+
+
+.shoppingCartTitleContainer {
+  background: #fffaf6;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.shoppingCartContainer {
+  background: #fffaf6;
+  padding-top: 15px;
+}
+
+#cartTitle {
+  margin: 0 auto;
+}
+
+
+
+
+
+label {
+  display: inline-block;
+}
+
+#category {
+  width: 150px;
+  display: inline-block;
+}
+
+
+
+
+.productDisplay {
+  margin-top: 30px;
+  text-align: center;
+}
+.productDisplay > div {
+  padding: 0 !important;
+}
+.productDisplay img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+@media (max-width: 480px) {
+  .col-xs-6 {
+    width: 100% !important;
+  }
+}
+.productDisplay a {
+  color: #ae7880;
+}
+.productDisplay a:hover {
+  color: #cfad71;
+  text-decoration: none;
+}
+p {
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 575px) {
+
+  #catGrid {
+    padding-top: 30px!important;
+    padding-left: 100px!important;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+==============================================
+slideRight
+==============================================
+*/
+
+
+.slideRight{
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;
+
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-150%);
+	}
+
+  80% {
+    transform: translateX(4%);
+  }
+
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(-150%);
+	}
+
+  80% {
+    transform: translateX(4%);
+  }
+
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}

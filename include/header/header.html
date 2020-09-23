@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" dir="ltr">
+
+
+
+  <head>
+
+    <title>Header</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script type="text/javascript">
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+
+    </script>
+
+    <style media="screen">
+    body, html {
+       margin: 0;
+       padding: 0;
+     }
+
+
+
+    /* -------------- NAV BEGIN ----------------*/
+
+    div.burger {
+      top: 10px;
+      right: 20px;
+      height: 55px;
+      width: 55px;
+      position: absolute;
+      cursor: pointer;
+    }
+
+    span.patty {
+      background-color: #ae7880;
+      height: 7px;
+      width: 39px;
+      border-radius: 2px;
+      position: absolute;
+      top: 45%;
+      left: 15%;
+      -webkit-transition: all 1s ease;
+    }
+
+    span.patty::before {
+      content: "";
+      background-color: #ae7880;
+      height: 7px;
+      width: 39px;
+      border-radius: 2px;
+      position: absolute;
+      bottom: 200%;
+      width: 100%;
+      left: 0;
+      -webkit-transition: all 1s ease;
+    }
+
+    span.patty::after {
+      content: "";
+      background-color: #ae7880;
+      height: 7px;
+      width: 39px;
+      border-radius: 2px;
+      position: absolute;
+      top: 200%;
+      width: 100%;
+      left: 0;
+      -webkit-transition: all 1s ease;
+    }
+
+
+
+    div.burger2:hover span.patty {
+      transform: rotate(180deg);
+    }
+
+    div.burger2:hover span.patty::before {
+      bottom: 8px;
+      left: 14px;
+      width: 30px;
+      transform: rotate(45deg)
+    }
+
+    div.burger2:hover span.patty::after {
+      top: 8px;
+      left: 14px;
+      width: 30px;
+      transform: rotate(-45deg)
+    }
+
+
+    header {
+      background: white;
+      height: 80px;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      margin-left: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    #cartImg {
+      width: auto;
+      height: 38px;
+      margin-right: 30px;
+      position: absolute;
+      top: 20px;
+      right: 70px;
+    }
+
+    #menu{
+        display:none;
+        border:1px dotted grey;
+        text-align:center;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      background-color: #ddb4bb;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 100px;
+      text-align:center;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+
+    }
+
+    .sidenav a:hover{
+      color: white;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    .sidenav .closebtn:hover {
+      color: white;
+    }
+
+
+    /* ----------------------- NAV END -------------*/
+    </style>
+
+  </head>
+
+  <body>
+
+    <header>
+      <a href="../../index/dum/index.php">
+        <img src="../../img/chelseaJayLogoIndex.png" alt="logo">
+      </a>
+      <a href="../../checkout/shoppingCart/cart.php">
+        <img id="cartImg" src="../../img/shopCart.png" alt="Shopping Cart">
+      </a>
+      <a onclick="openNav()"><div class="burger burger2">
+        <span class="patty"></span>
+      </div></a>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../../index/dum/index.php">Home</a>
+      <a href="../../about-contact/dum/about.php">About</a>
+      <a href="../../about-contact/dum/about.php#ContactContainer">Contact</a>
+      <a href="../../products/productChoices/productChoices.php?get_category=all">Products</a>
+      <a href="../../blog/blogChoices/blogChoices.php">Blog</a>
+    </div>
+
+  </body>
+
+
+
+</html>

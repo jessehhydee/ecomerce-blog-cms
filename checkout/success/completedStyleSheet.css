@@ -1,0 +1,64 @@
+body, html {
+  background-color: #f6ede3!important;
+  margin: 0px;
+  padding: 0px;
+}
+
+.formReplacement {
+  background: #f6ede3;
+  margin: 100px auto 50px auto;
+}
+
+#logo {
+  height: 100px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.desc {
+  padding-top: 30px;
+  text-align: center;
+}
+
+h3 {
+  margin: 0 auto;
+}
+
+p {
+  margin: 0 auto;
+}
+
+#back {
+  color: #ae7880;
+  text-decoration: none;
+  margin: 30px auto 0 auto;
+}
+
+#back:hover {
+  color: #cfad71;
+}
+
+
+#formWrapper {
+  background: #fffaf6;
+  padding: 40px 30px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 575px) {
+
+  body, html {
+    background-color: #fffaf6!important;
+  }
+
+  .formReplacement {
+    background: #fffaf6;
+  }
+
+}
