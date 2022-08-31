@@ -1,4 +1,4 @@
-# ecomerceAndBlogCMS
+# ecomerce-blog-cms
 Chelsea Jay Design website using PHP/JS/MySQL
 
 
